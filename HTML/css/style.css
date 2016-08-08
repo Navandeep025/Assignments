@@ -1,0 +1,120 @@
+nav li{
+	display: inline;	
+	margin-left: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+	position: relative;
+	overflow: hidden;
+}
+
+.head{
+	background: #85C1E9;
+	position: fixed;
+	width: 100%;
+	padding-top: 08px;
+}
+
+.wrap{
+	text-align: center;
+	padding-top: 90px;
+}
+
+h1{
+	text-indent: -9999px;
+}
+
+nav ul{
+  	margin-top:20px;
+ 	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+header{
+	margin-bottom: 8px;
+}
+
+.img1{
+	margin-top: 350px;
+}
+
+.primary{
+	font-size: 22px;
+}
+
+.top{
+	text-align: center;
+	padding-top: 20px;
+	background: white;
+}
+.main{
+	margin-top: 240px;
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+
+h3{
+	font-size: 35px;
+}
+
+.health p,ul{
+	padding-top: 30px;
+	margin-top: 10px;
+	font-size: 22px;
+}
+
+.aerobic{
+	margin-top: 10px;
+	font-size: 22px;
+}
+
+.active{
+	margin-top: 10px;
+	font-size: 22px;
+}
+
+.about{
+	font-size: 16px;
+}
+
+a{
+	text-decoration: none;
+}
+
+h4{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.footer{
+	background-color: #BDC3C7;
+	margin-top: 20px;
+	font-family: 'Hammersmith One', sans-serif;	
+}
+
+a:hover{
+	text-decoration: underline;
+	color: red;
+}
+
+h2{
+	font-size: 30px;
+	color: #21618C;
+}
+
+.cols{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.cols a:hover{
+	color: red;
+}
+
+.end{
+	background-color: #D6DBDF;
+}
+
+.top1{
+	text-align: center;
+	background: #EB984E;
+}
