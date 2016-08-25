@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+ <head>
+		<title>Movie</title>
+		<meta charset="utf-8">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		 <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet"> 
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		<!-- <link href="styles.css" rel="stylesheet"> -->
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		
+ </head>
+
+ <body>
+
+ 	<div class="navbar navbar-default navbar-fixed-top">
+ 	  <div class="container">
+	 	<h1 id="head">The Movies</h1>
+	  </div>
+	</div>	
+	  
+		  <div class="container text">
+		
+			<h4>Enter your movie name here</h4>
+			 <center><input type="text" id="title" placeholder="Movie name..."></center>		
+			 <center><button id="searchBtn">Search movie<span class="glyphicon glyphicon-search"></span></button></center>
+		  
+		<div class= "table-responsive">
+
+			<table id="table" class="table-striped table-bordered ">
+				<tr id = "tableRow">
+					<th>Title</th>
+					<th>Year</th>
+					<th>imdbID</th>
+					<th>Type</th>
+					<th>Poster</th>
+				</tr>
+				
+			</table>
+		</div>
+		</div>
+		<div id="wrongName"></div>
+
+ 		<script src="jquery-1.8.0.min.js"></script>
+ 		<script src="main.js"></script>
+ </body>
+</html>
