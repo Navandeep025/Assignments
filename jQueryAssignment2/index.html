@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+	<title>Abc Technologies</title>
+	<meta charset="utf-8">
+
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet"> 
+
+	<!-- Custom CSS -->
+	<link href="includes/css/styles.css" rel="stylesheet">
+	<!-- <link href="styles.css" rel="stylesheet"> -->
+
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	
+
+</head>
+
+<body>
+
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<h1 id="head">ABC Technologies</h1>
+		</div>
+	</div>	
+
+	
+
+	<div class="container text">
+
+		<div id="emp">
+			<center> <h3 id="empForm"> Employee Form </h3> </center>
+			<form name = "employee">
+
+				<center>
+					<label for="name" id="name">Name </label>
+					<input type="text" id="nameInput" name ="nameV" required maxlength= 30 placeholder="Enter name" >
+				</center>
+				<center>
+					<label for="age" id="age" width="200">Age </label>
+					<input type="number" id="ageInput" name ="ageV" width="200" required min="18" max="99" placeholder="Enter age" >
+				</center>
+				<center>
+				
+				<center>
+					<label class=" control-label" for="genderInput" id ="gender">Gender</label>
+					
+						<select id="genderInput">
+							<option id="male">Male</option>
+							<option id ="female">Female</option>
+						</select>
+
+				</center>
+
+				</center>
+				<center>
+					<label for="company" id="company">Company </label>
+					<input type="text" id="companyInput" name ="companyV" required placeholder="Enter company" >
+				</center>	
+				<center>
+					<label for="email" id="email">Email </label>
+					<input type="text" id="emailInput" name ="email" /*pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"*/ placeholder="Enter email" required>
+				</center>
+				<center>
+					<label for="phone" id="phone">Phone no. </label>
+					<input type="text" maxlength="10" pattern="[0-9]{10}"  id="phoneInput" name ="phoneV" required  placeholder="Enter phone no." >
+				</center>
+				<center>
+					<label for="address" id="address">Address </label>
+
+					<textarea id="textAddress" rows="4" cols="40" name ="addressV" required ></textarea>
+				</center>
+					<center><input type="submit" id="back" value="Back"></center>
+					<center><input type="submit" id="addRecord" value="Add a record"></center>
+
+			</form> 
+		</div>
+
+				<center><input type="submit" id="addDetails" value="Add details"></center>
+
+
+		<!-- <div class= "container"> -->
+		
+		<div  id="searchDiv" class="cols-xs-6">
+			<p id ="label">Enter the id to search a record </p>
+			<!-- <label for="id" id="id">Id </label> -->
+			
+
+			<div id="btnSearch" class="cols-xs-6">
+				<input type="text" id="idInputTop" placeholder="Enter id" required>
+				<button id = "search" type="submit"> Search <span class="glyphicon glyphicon-search"></span></button>
+			</div>
+		 </div>	 
+
+		<div id="btnDisplay" class="cols-xs-6">
+			<!-- <div class= "cols-xs-6" >
+				<label for="display" id="displayAll">To get all records click on button below </label>
+			</div> -->
+			<div class= "cols-xs-6">
+				<button id = "btnDisplayRecords">Display all records</button>
+			</div>
+		</div>
+
+	</div>
+		<div class= "table-responsive">
+
+			<table id="table" class="table-striped table-bordered ">
+				<tr id = "tableRow">
+					<th>Id</th>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Gender</th>
+					<th>Company</th>
+					<th>Email</th>
+					<th>Phone No.</th>
+					<th>Address</th>
+					<th>Operations</th>
+				</tr>
+				
+			</table>
+		</div>
+		<div id= "paging">
+		</div>
+
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Edit the record here</h4>
+			</div>
+			<!--end modal header-->
+
+			<div class="modal-body">
+				<form id="form" class="form-horizontal" name="modalUpdate">
+
+					<center>
+						<label for="name" id="name">Name </label>
+						<input type="text" id="nameModal" name ="nameV" required maxlength= 30 placeholder="Enter name" >
+					</center>
+					<center>
+						<label for="age" id="age" width="200">Age </label>
+						<input type="number" id="ageModal" name ="ageV" width="200" required min="18" max="99" placeholder="Enter age" >
+					</center>
+					<!-- <center>
+						<label for="gender" id="gender">Gender </label>
+						<input type="text" id="genderModal" name ="genderV" required placeholder="Enter gender" >
+					</center>
+ -->					
+ 					<center>
+					<label class=" control-label" for="genderInput" id ="gender1">Gender</label>
+					
+						<select id="genderInput1">
+							<option id="male1">Male</option>
+							<option id ="female1">Female</option>
+						</select>
+
+				</center>
+
+ 					<center>
+						<label for="company" id="company">Company </label>
+						<input type="text" id="companyModal" name ="companyV" required placeholder="Enter company" >
+					</center>	
+					<center>
+						<label for="email" id="email">Email </label>
+						<input type="text" id="emailModal" name ="email" /*pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"*/ placeholder="Enter email" required>
+					</center>
+					<center>
+						<label for="phone" id="phone">Phone no. </label>
+						<input type="text" maxlength="10" pattern="[0-9]{10}"  id="phoneModal" name ="phoneV" required  placeholder="Enter phone no." >
+					</center>
+					<center>
+						<label for="address" id="address">Address </label>
+
+						<textarea id="addressModal" rows="4" cols="40" name ="addressV" required ></textarea>
+					</center>
+
+					<!--end modal-body-->
+					<div class="modal-footer">
+						<button class="btn btn-dafault" data-dismiss="modal" type="button">Close</button>
+						<button class="btn btn-primary" type="submit" id="updateChanges"  >Save Changes</button>
+					</div>
+				</form>
+				<!--end modal-footer-->
+			</div>
+			<!--end modal content-->
+		</div>
+		<!--end modal dialog-->
+	</div>  
+
+	<div class="modal fade" id="myModal2">
+		<div class="modal-dialog">	<!--end myModal--> 
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">×</span>
+					<h2>Modal Header</h2>
+				</div>
+				<div class="modal-body">
+					<p>Some text in the Modal Body</p>
+					<p>Some other text...</p>
+				</div>
+				<div class="modal-footer">
+					<h3>Modal Footer</h3>
+				</div>
+			</div>
+		</div> 
+
+	</div>
+
+	<div id="postswrapper">
+    	<div class="item"></div>
+    
+   		<div id="loadmoreajaxloader" style="display:none;"></div>
+ 	</div>
+
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>	
+
+	<script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--<script src= "https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>-->
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="jquery.bootpag.min.js"></script> 
+
+</body>
+</html>

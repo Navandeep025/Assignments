@@ -1,0 +1,420 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+   body{
+      /*background: #FEF9E7;*/
+   }
+   #search{
+      margin-top: 30px;    
+   }
+
+   #delete{
+      margin-left: 28px;
+      margin-bottom: 5px; 
+   }
+   #update{
+      margin-left: 25px; 
+   }
+
+   #idInputTop{
+      width: 200px;
+      height: 28px;
+      font-size: 20px;
+   }
+   .text{
+      margin-top: 150px;
+   }
+   #label{
+      text-align: center;
+      font-size: 27px;
+   }
+   #searchDiv{
+       margin-top:30px;
+       text-align: center;
+   }
+   #btnSearch{
+      text-align: center;
+      font-size: 25px;
+   }
+
+   #btnDisplayRecords{
+      text-align: center;
+      font-size: 25px;
+   }
+   #btnDisplay{
+      text-align: center;
+      margin-top: 30px;
+   }
+  
+  .table-responsive{
+      border: 2px;
+      /*border-width: 5px;*/
+      border-style: solid;
+      border-color: black;
+      width: 100%;
+      /*height: 50px;*/
+      margin-top: 30px;
+   }
+
+   #form{
+      padding-top: 15px;
+      border: 1px black solid;
+      background: #EAFAF1;
+      margin-top: 30px;
+   }
+
+   #empForm{
+      font-size: 35px;
+      color: #BA4A00;
+      font-weight: bold;
+      /*padding-bottom: 20px;*/
+   }
+
+    #table{
+      width: 100%;
+      height: auto;
+     border-collapse: separate;
+
+   }
+   #tableRow{
+      font-size: 25px;
+   }
+   #table{
+      font-size: 20px;
+   }
+    
+   #emp{
+      background: #C6FBA8;
+   }
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+  /* #id2{
+      font-size: 28px;
+      width: 150px;
+   } */
+
+   #id{
+      font-size: 28px;
+      width: 150px;
+   }
+
+   #displayAll{
+      font-size: 28px;
+   }
+
+
+   #idInput{
+      height: 28px;
+      font-size: 23px;
+   }
+
+   #age{
+      font-size: 28px;
+      width: 150px;
+   }
+   #ageInput{
+      height: 28px;
+      font-size: 23px;
+   }
+
+   #name{
+      font-size: 28px;
+      width: 150px;
+   }
+   #nameInput{
+      height: 28px;
+      font-size: 23px;
+   }
+
+   #gender{
+      font-size: 28px;
+      width: 150px;
+   }
+   #genderInput{
+      height: 28px;
+      font-size: 23px;
+   }
+   #male{
+      font-size: 17px;
+   }
+   #female{
+      font-size: 17px;
+   }
+
+   #genderInput1{
+      height: 28px;
+      font-size: 23px;
+   }
+   #male1{
+      font-size: 17px;
+   }
+   #female1{
+      font-size: 17px;
+   }
+
+   #company{
+      font-size: 28px;
+      width: 150px;
+   }
+   #companyInput{
+      height: 28px;
+      font-size: 23px;
+   }
+
+   #email{
+      font-size: 28px;
+      width: 150px;
+   }
+   #emailInput{
+      height: 28px;
+      font-size: 23px;
+   }
+
+   #phone{
+      font-size: 28px;
+      width: 150px;
+   }
+   #phoneInput{
+      height: 28px;
+      font-size: 23px;
+   }
+
+   #address{
+      font-size: 28px;
+      width: 150px;
+   }
+  #textAddress{
+      height: 100px;
+      width: 300px;
+      font-size: 23px;
+   }
+
+   #addRecord{
+      font-size: 25px;
+      padding: 5px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+   }
+   #back{
+      font-size: 25px;
+      padding: 5px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+   }
+
+   #addDetails{
+      font-size: 25px;
+   }
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   .navbar{
+   background: #2ECC71;
+   height: 120px;
+}
+
+#head{
+   color: white;
+   font-size: 80px;
+   padding-top: -100px;
+}
+
+   
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+   #head{
+      font-size: 80px;
+      /*padding-top: 25px;*/
+   }
+} 
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    #head{
+      font-size: 40px;
+      padding-top: 25px;
+   }
+   .navbar{
+      height: 120px;
+   }
+   #form{
+      margin-top: 10px;
+   }
+   
+}
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+     #head{
+      font-size: 30px;
+      padding-top: 40px;
+   }
+
+   .navbar{
+      height: 120px;
+   }
+
+   #tableRow{
+      font-size: 22px;
+   }
+   #table{
+      font-size: 17px;
+   }
+
+   #form{
+      margin-top: 20px;
+   }
+
+   #label{
+      text-align: center;
+      font-size: 25px;
+   }
+   #searchDiv{
+       margin-top: 150px;
+       text-align: center;
+   }
+   #btnSearch{
+      text-align: center;
+      font-size: 22px;
+   }
+
+   #btnDisplayRecords{
+      text-align: center;
+      font-size: 22px;
+   }
+   #btnDisplay{
+      text-align: center;
+      margin-top: 22px;
+   }
+
+  /* #id2{
+      font-size: 20px;
+      width: 100px;
+   } */
+
+   #id{
+      font-size: 20px;
+      width: 100px;
+   }
+
+   #displayAll{
+      font-size: 20px;
+   }
+
+   #idInput{
+      height: 24px;
+      font-size: 20px;
+   }
+
+   #age{
+      font-size: 20px;
+      width: 100px;
+   }
+   #ageInput{
+      height: 24px;
+      font-size: 20px;
+   }
+
+   #name{
+      font-size: 20px;
+      width: 100px;
+   }
+   #nameInput{
+      height: 24px;
+      font-size: 20px;
+   }
+
+   #gender{
+      font-size: 20px;
+      width: 100px;
+   }
+   #genderInput{
+      height: 24px;
+      font-size: 17px;
+   }
+   #male{
+      font-size: 17px;
+   }
+   #female{
+      font-size: 17px;
+   }
+
+   #genderInput1{
+      height: 28px;
+      font-size: 23px;
+   }
+   #male1{
+      font-size: 17px;
+   }
+   #female1{
+      font-size: 17px;
+   }
+
+   #company{
+      font-size: 20px;
+      width: 100px;
+   }
+   #companyInput{
+      height: 24px;
+      font-size: 20px;
+   }
+
+   #email{
+      font-size: 20px;
+      width: 100px;
+   }
+   #emailInput{
+      height: 24px;
+      font-size: 20px;
+   }
+
+   #phone{
+      font-size: 20px;
+      width: 100px;
+   }
+   #phoneInput{
+      height: 24px;
+      font-size: 20px;
+   }
+
+   #address{
+      font-size: 20px;
+      width: 100px;
+   }
+   #textAddress{
+      height: 100px;
+      width: 250px;
+   }
+}
