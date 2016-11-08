@@ -1,0 +1,14 @@
+{
+  "name": "jQuery Assignment1",
+  "homepage": "https://github.com/stackroute/vagrant-xenial64-node6-mongo3.2",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

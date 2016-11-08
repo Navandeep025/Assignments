@@ -1,0 +1,39 @@
+<md-card layout-align="center center">
+<md-content  layout="row" layout-xs="column" layout-md="column" layout-sm="column"> 
+	
+	<div layout="row" layout-wrap layout-align="center center">
+
+		<md-card flex-xs="90" flex-sm="40" flex-md="30" flex="20"  layout-align="center center" layout-wrap   dir-paginate="movie in movieData|itemsPerPage:itemsPerPage" total-items="total_count" >
+			<md-card-content layout-align="center center">
+				<div>
+					<p><img ng-src="{{movie.Poster}}" /></p>
+				</div>
+
+				<div>
+					<p>Title: {{movie.Title}}</p>
+					<p>Year: {{movie.Year}}</p>
+					<p>imdbID: {{movie.imdbID}}</p>
+					<p>Type: {{movie.Type}}</p>
+
+					<a href="#/details/{{movie.imdbID}}" > More Info </a>
+				</div>
+			</md-card-content>
+
+		</md-card>	  
+	</div>     
+
+</md-content>
+
+
+	<div >
+		<dir-pagination-controls
+			max-size="10"
+			direction-links="true"
+			boundary-links="true" 
+			on-page-change="getData(newPageNumber)" >
+		</dir-pagination-controls>
+	</div>  
+</md-card>
+
+
+
